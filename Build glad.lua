@@ -20,8 +20,8 @@ project "glad"
     -- Add the dependant project
     links { }
 
-   targetdir ("bin/" .. OutputDir .. "/%{prj.name}")
-   objdir ("bin/intermediates/" .. OutputDir .. "/%{prj.name}")
+   targetdir ("lib/" .. OutputDir .. "/%{prj.name}")
+   objdir ("lib/intermediates/" .. OutputDir .. "/%{prj.name}")
 
    filter "system:windows"
        systemversion "latest"
