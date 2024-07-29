@@ -43,3 +43,5 @@ project "glad"
        runtime "Release"
        optimize "On"
        symbols "Off"
+    filter "action:vs*"
+        buildoptions { "/MP" }  -- Enable multi-process compilation
